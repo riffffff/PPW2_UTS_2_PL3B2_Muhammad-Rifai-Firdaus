@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
-<body>   
+<body>
 
     <div class="container">
         <h3 class=" mt-3">Laravel 10 CRUD Application - PPW 2</h3>

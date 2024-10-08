@@ -1,6 +1,4 @@
-@extends('layouts')
-
-@section('content')
+@extends('products.layouts')
 
 <div class="row justify-content-center mt-3">
     <div class="col-md-12">
@@ -17,14 +15,14 @@
                 <a href="{{ route('products.create') }}" class="btn btn-success btn-sm my-2"><i class="bi bi-plus-circle"></i> Add New Product</a>
                 <table class="table table-striped table-bordered">
                     <thead>
-                      <tr>
+                    <tr>
                         <th scope="col">S#</th>
                         <th scope="col">Code</th>
                         <th scope="col">Name</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Price</th>
                         <th scope="col">Action</th>
-                      </tr>
+                    </tr>
                     </thead>
                     <tbody>
                         @forelse ($products as $product)
@@ -55,13 +53,11 @@
                             </td>
                         @endforelse
                     </tbody>
-                  </table>
+                </table>
 
-                  {{ $products->links() }}
+                {{ $products->links() }}
 
             </div>
         </div>
-    </div>    
+    </div>
 </div>
-    
-@endsection
